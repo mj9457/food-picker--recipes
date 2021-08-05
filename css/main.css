@@ -6,8 +6,7 @@ body {}
 #contents .container {border-right: 1px solid #dbdbdb; border-left: 1px solid #dbdbdb;}
 #cont_left {float: left; width: 250px;}
 #cont_center {
-    overflow: hidden; min-height: 1300px; margin-right: 250px;
-    border-right: 1px solid #dbdbdb;
+    overflow: hidden; min-height: 1300px;
     border-left: 1px solid #dbdbdb;
 }
 #cont_right {position: absolute; right: 0; top: 0; width: 250px;}
@@ -27,6 +26,10 @@ body {}
     .row {padding: 0 15px;}
     #contents .container {border: 0;}
     .title .btn {right: 5px;}
+
+    .random_eat_menu {
+        margin-left: 5%;
+    }
 }
 
 /* 화면 너비 0 ~ 1024px */
@@ -46,12 +49,32 @@ body {}
     .nav > div:last-child {width: 100%;}
     .nav > div li {width: 25%;}
     .nav > div:last-child li {width: 25%;}
+
+    .random_eat span:nth-child(n+2) {
+        display: inline-block;
+        font-size: 15px;
+        width: 46%;
+    }
+
+    .random_eat_menu {
+        margin-left: 18%;
+    }
 }
 
 /* 화면 너비 0 ~ 768px */
 @media (max-width: 768px){
     #cont_left {float: none; width: 100%;}
     #cont_center {border-left: 0;}
+
+    .column.col2 {display: none;}
+
+    .random_eat_menu {
+        margin: 0%;
+    }
+    .random_eat span:nth-child(n+2) {
+        width: 48%;
+        text-align: center;
+    }
 }   
 /* 화면 너비 0 ~ 600px */
 @media (max-width: 600px){
@@ -78,10 +101,20 @@ body {}
     .column.col7 {display: none;}
     .column.col8 {display: none;}
     .column.col9 {display: none;}
+
+    .random_eat span:nth-child(n+2) {
+        display: inline-block;
+        font-size: 16px;
+        width: 49%;
+        text-align: center;        
+    }
 }
 
 /* 화면 너비 0 ~ 480px */
-@media (max-width: 480px){
+@media (max-width: 480px){    
+    .random_eat span:nth-child(n+2) {
+        width: 100%;    
+    }
     /*
     .nav {
         margin-top: 20px;

@@ -27,10 +27,10 @@ const meat_menus = [
 ];
 
 const ck_menus = [
-    {CkMenu: "후라이드치킨"},{CkMenu: "양념치킨"},{CkMenu:"후라이드,양념(반반)"},{CkMenu:"통닭구이"},
-    {CkMenu:"간장치킨"},{CkMenu:"파닭"},{CkMenu:"닭강정"},{CkMenu:"허니콤보(교촌)"},{CkMenu:""},{CkMenu:"마늘치킨(노랑통닭)"},
+    {CkMenu: "후라이드치킨"},{CkMenu: "양념치킨"},{CkMenu:"후라이드,양념 반반"},{CkMenu:"통닭구이"},
+    {CkMenu:"간장치킨"},{CkMenu:"파닭"},{CkMenu:"닭강정"},{CkMenu:"허니콤보(교촌)"},{CkMenu:"레드콤보(교촌)"},{CkMenu:"마늘치킨(노랑통닭)"},
     {CkMenu:"황금올리브(BBQ)"},{CkMenu:"자메이카(BBQ)"},{CkMenu:"뿌링클(BHC)"},{CkMenu:"맛초킹(BHC)"},{CkMenu:"골드킹(BHC)"},
-    {CkMenu:"고추마요(푸라닭)"},{CkMenu:"블랙알리오(푸라닭)"},{CkMenu:"양념구이(지코바)"},{CkMenu:"소금구이(지코바)"},{CkMenu:"슈크림양념치킨(처갓집)"}
+    {CkMenu:"고추마요(푸라닭)"},{CkMenu:"블랙알리오(푸라닭)"},{CkMenu:"양념구이(지코바)"},{CkMenu:"소금구이(지코바)"},{CkMenu:"슈크림양념(처갓집)"}
 ];
 
 const jf_menus = [
