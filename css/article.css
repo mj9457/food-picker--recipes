@@ -9,7 +9,7 @@
     padding: 5px 0;
 }
 .title .btn {
-    position: absolute; top: 5px;
+    position: absolute; top: -9px;
     width: 60px; height: 60px;
     line-height: 60px;
     background: #3192bf; color: #fff;
@@ -25,15 +25,19 @@
 
 .title .btn i {
     position: relative;
-    top: 5px;
+    top: -5px;
 }
 
 .column {
     padding: 15px;
-    border-bottom: 1px solid #dbdbdb;
 }
 
-.column .col_tit {font-size: 20px; color: #2f7fa6; padding-bottom: 5px;}
+.column .col_tit {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2f7fa6;
+    padding-bottom: 5px;
+}
 .column .col_desc {
     border-bottom: 1px dashed #dbdbdb; 
     padding-bottom: 15px; margin-bottom: 15px; 
@@ -45,6 +49,7 @@
     color: #2f7fa6;
     padding-bottom: 5px;
     text-align: center;
+    font-weight: bold;
 }
 .column .col_desc_r {
     border-bottom: 1px dashed #dbdbdb; 
@@ -55,10 +60,10 @@
     text-align: center;
 }
 
-.column.col1 {}
+.column.col1 {border-bottom: 1px solid #dbdbdb;}
 .column.col2 {}
-.column.col3 {border-bottom: 0;}
-.column.col4 {}
+.column.col3 {}
+.column.col4 {border-bottom: 1px solid #dbdbdb;}
 .column.col5 {border-bottom: 0;}
 .column.col6 {}
 .column.col7 {}
@@ -100,6 +105,11 @@
     color: #878787;
     text-transform: uppercase;
     font-size: 10px;
+}
+
+summary .more_btn {
+    display: none;
+    text-align: right;
 }
 
 /* 게시판2 */
@@ -206,5 +216,5 @@
 }
 
 .random_eat_menu {
-    margin-left: 13%;
+    margin-left: 9%;
 }

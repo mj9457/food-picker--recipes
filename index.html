@@ -6,6 +6,12 @@
     <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
     <meta name="keywords" content="HTML5, css, javascript, js, cook, recipe, food, 뭐먹지, 요리법, 레시피">
     <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="load-more-button.js"></script>
+
     <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>    
     <!--
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
@@ -70,7 +76,7 @@
                     <div class="last">
                         <h3>장보기</h3>
                         <ol>
-                            <li><a href="#">장봐야할 목록</a></li>
+                            <li><a href="#">장볼 목록</a></li>
                         </ol>
                     </div>
                 </div>
@@ -107,7 +113,7 @@
                                 <li><a href="#">오늘 뭐먹지? <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
                                 <li><a href="#">레시피 <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
                                 <li><a href="#">음식 월드컵 <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
-                                <li><a href="#">장봐야할 목록 <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
+                                <li><a href="#">장볼 목록 <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
                                 <li><a href="https://www.youtube.com/results?search_query=%EC%9A%94%EB%A6%AC">요리 유튜브 <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
                                 <li><a href="#">요리<i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
                             </ul>
@@ -116,93 +122,116 @@
                     </article>
                     <!-- //col1 -->
                     <article class="column col2">
-                        <h4 class="col_tit">Notice</h4>
-                        <p class="col_desc">게시판 영역의 한줄 효과와 두줄 효과 게시판입니다.</p>
+                        <h4 class="col_tit">다양한 음식</h4>
+                        <p class="col_desc">음식 종류</p>
                         <!-- 게시판 -->
-                        <div class="notice1">
-                            <h5>notice1</h5>
-                            <ul>
-                                <li><a href="#">이 줄은 한 줄 효과입니다. 이 줄은 한 줄 효과입니다.</a></li>
-                                <li><a href="#">이 줄은 한 줄 효과입니다. 이 줄은 한 줄 효과입니다.</a></li>
-                                <li><a href="#">이 줄은 한 줄 효과입니다. 이 줄은 한 줄 효과입니다.</a></li>
-                                <li><a href="#">이 줄은 한 줄 효과입니다. 이 줄은 한 줄 효과입니다.</a></li>
-                            </ul>
-                            <a href="#" class="more" title="더 보기">More<i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+                        <div class="notice1">                            
+                            <h4 style="display: inline;">밥</h4>
+                            <div>
+                                <details style="display: inline;">
+                                    <summary class="more_btn"><i class="fa fa-plus-circle" aria-hidden="true"></i>모두보기</summary>
+                                    <ul>
+                                        <li class="side_menu">짜장밥</li>
+                                        <li class="side_menu">짬뽕밥</li>
+                                        <li class="side_menu">잡채밥</li>
+                                        <li class="side_menu">영양밥</li>
+                                        <li class="side_menu">나시고랭</li>
+                                        <li class="side_menu">햄볶음밥</li>
+                                        <li class="side_menu">철판볶음밥</li>
+                                        <li class="side_menu">김치볶음밥</li>
+                                        <li class="side_menu">계란볶음밥</li>
+                                        <li class="side_menu">새우볶음밥</li>                                        
+                                        <li class="side_menu">야채볶음밥</li>
+                                        <li class="side_menu">해물볶음밥</li>
+                                        <li class="side_menu">마라볶음밥</li>
+                                        <li class="side_menu">불닭볶음밥</li>
+                                        <li class="side_menu">낙지볶음밥</li>
+                                        <li class="side_menu">족발볶음밥</li>
+                                        <li class="side_menu">막창볶음밥</li>
+                                        <li class="side_menu">곱창볶음밥</li>
+                                        <li class="side_menu">대창볶음밥</li>
+                                        <li class="side_menu">쟁반볶음밥</li>
+                                        <li class="side_menu">치즈볶음밥</li>
+                                        <li class="side_menu">사천볶음밥</li>
+                                        <li class="side_menu">참치볶음밥</li>
+                                        <li class="side_menu">오리볶음밥</li>                                        
+                                        <li class="side_menu">쭈꾸미볶음밥</li>
+                                        <li class="side_menu">날치알볶음밥</li>
+                                        <li class="side_menu">불고기볶음밥</li>
+                                        <li class="side_menu">치킨데리야끼볶음밥</li>
+                                        <li class="side_menu"></li>
+                                        <li class="side_menu"></li>                                     
+                                        <li class="side_menu">회덮밥</li>
+                                        <li class="side_menu">삼겹덮밥</li>
+                                        <li class="side_menu">튀김덮밥</li>
+                                        <li class="side_menu">생선덮밥</li>
+                                        <li class="side_menu">중화덮밥</li>
+                                        <li class="side_menu">계란덮밥</li>
+                                        <li class="side_menu">참치덮밥</li>
+                                        <li class="side_menu">곱창덮밥</li>
+                                        <li class="side_menu">대창덮밥</li>
+                                        <li class="side_menu">제육덮밥</li>
+                                        <li class="side_menu">장어덮밥</li>
+                                        <li class="side_menu">연어덮밥</li>
+                                        <li class="side_menu">차돌덮밥</li>
+                                        <li class="side_menu">카레덮밥</li>
+                                        <li class="side_menu">소고기덮밥</li>
+                                        <li class="side_menu">불고기덮밥</li>                                        
+                                        <li class="side_menu">항정살덮밥</li>
+                                        <li class="side_menu">삼겹살덮밥</li>
+                                        <li class="side_menu">우삼겹덮밥</li>
+                                        <li class="side_menu">오돌뼈덮밥</li>
+                                        <li class="side_menu">연어알덮밥</li>
+                                        <li class="side_menu">돈까스덮밥</li>
+                                        <li class="side_menu">닭꼬치덮밥</li>
+                                        <li class="side_menu">전갱이덮밥</li>
+                                        <li class="side_menu">해산물덮밥</li>
+                                        <li class="side_menu">성게알덮밥</li>
+                                        <li class="side_menu">소불고기덮밥</li>
+                                        <li class="side_menu">치킨마요덮밥</li>
+                                        <li class="side_menu">새우튀김덮밥</li>
+                                        <li class="side_menu">돼지고기덮밥</li>
+                                        <li class="side_menu">생선가쓰덮밥</li>
+                                        <li class="side_menu">카라아게덮밥</li>
+                                        <li class="side_menu">다랑어회덮밥</li>
+                                        <li class="side_menu">닭고기계란덮밥</li>  
+                                        <li class="side_menu">치킨스테이크덮밥</li>
+                                        <li class="side_menu"></li>
+                                        <li class="side_menu"></li>
+                                        <li class="side_menu">멸치주먹밥</li>
+                                        <li class="side_menu">참치주먹밥</li>
+                                        <li class="side_menu">스팸주먹밥</li>
+                                        <li class="side_menu">날치알주먹밥</li>                                        
+                                        <li class="side_menu"></li>
+                                        <li class="side_menu"></li>                                       
+                                        <li class="side_menu">잡채</li>
+                                        <li class="side_menu">냉면</li>
+                                        <li class="side_menu">밀면</li>
+                                        <li class="side_menu">쫄면</li>
+                                        <li class="side_menu">콩국수</li>
+                                        <li class="side_menu">칼국수</li>
+                                        <li class="side_menu">막국수</li>
+                                        <li class="side_menu">잔치국수</li>
+                                        <li class="side_menu">메밀국수</li>
+                                        <li class="side_menu">비빔국수</li>
+                                        <li class="side_menu"></li>
+                                        <li class="side_menu">닭갈비</li>
+                                        <li class="side_menu">소갈비</li>
+                                        <li class="side_menu">돼지갈비</li>                                        
+                                        <li class="side_menu"></li>
+                                        <li class="side_menu"></li>
+                                        <li class="side_menu"></li>
+                                        <li class="side_menu"></li>
+                                        <li class="side_menu"></li>
+                                        <li class="side_menu"></li>
+                                        <li class="side_menu"></li>
+                                        <li class="side_menu"></li>
+                                        <li class="side_menu"></li>
+                                        <li class="side_menu"></li>
+                                    </ul>
+                                </details>  
+                            </div>                          
                         </div>
-                        <!-- //게시판 -->
-                        <!-- 게시판 -->
-                        <div class="notice1">
-                            <h5>notice1</h5>
-                            <ul>
-                                <li><a href="#">이 줄은 한 줄 효과입니다. 이 줄은 한 줄 효과입니다.</a></li>
-                                <li><a href="#">이 줄은 한 줄 효과입니다. 이 줄은 한 줄 효과입니다.</a></li>
-                                <li><a href="#">이 줄은 한 줄 효과입니다. 이 줄은 한 줄 효과입니다.</a></li>
-                                <li><a href="#">이 줄은 한 줄 효과입니다. 이 줄은 한 줄 효과입니다.</a></li>
-                            </ul>
-                            <a href="#" class="more" title="더 보기">More<i class="fa fa-plus-circle" aria-hidden="true"></i></a>
-                        </div>
-                        <!-- //게시판 -->
-                        <!-- 게시판 -->
-                        <div class="notice1">
-                            <h5>notice1</h5>
-                            <ul>
-                                <li><a href="#">이 줄은 한 줄 효과입니다. 이 줄은 한 줄 효과입니다.</a></li>
-                                <li><a href="#">이 줄은 한 줄 효과입니다. 이 줄은 한 줄 효과입니다.</a></li>
-                                <li><a href="#">이 줄은 한 줄 효과입니다. 이 줄은 한 줄 효과입니다.</a></li>
-                                <li><a href="#">이 줄은 한 줄 효과입니다. 이 줄은 한 줄 효과입니다.</a></li>
-                            </ul>
-                            <a href="#" class="more" title="더 보기">More<i class="fa fa-plus-circle" aria-hidden="true"></i></a>
-                        </div>
-                        <!-- //게시판 -->
-                        <!-- 게시판 -->
-                        <div class="notice1">
-                            <h5>notice1</h5>
-                            <ul>
-                                <li><a href="#">이 줄은 한 줄 효과입니다. 이 줄은 한 줄 효과입니다.</a></li>
-                                <li><a href="#">이 줄은 한 줄 효과입니다. 이 줄은 한 줄 효과입니다.</a></li>
-                                <li><a href="#">이 줄은 한 줄 효과입니다. 이 줄은 한 줄 효과입니다.</a></li>
-                                <li><a href="#">이 줄은 한 줄 효과입니다. 이 줄은 한 줄 효과입니다.</a></li>
-                            </ul>
-                            <a href="#" class="more" title="더 보기">More<i class="fa fa-plus-circle" aria-hidden="true"></i></a>
-                        </div>
-                        <!-- //게시판 -->
-                        <!-- 게시판 -->
-                        <div class="notice1">
-                            <h5>notice1</h5>
-                            <ul>
-                                <li><a href="#">이 줄은 한 줄 효과입니다. 이 줄은 한 줄 효과입니다.</a></li>
-                                <li><a href="#">이 줄은 한 줄 효과입니다. 이 줄은 한 줄 효과입니다.</a></li>
-                                <li><a href="#">이 줄은 한 줄 효과입니다. 이 줄은 한 줄 효과입니다.</a></li>
-                                <li><a href="#">이 줄은 한 줄 효과입니다. 이 줄은 한 줄 효과입니다.</a></li>
-                            </ul>
-                            <a href="#" class="more" title="더 보기">More<i class="fa fa-plus-circle" aria-hidden="true"></i></a>
-                        </div>
-                        <!-- //게시판 -->
-                        <!-- 게시판 -->
-                        <div class="notice1">
-                            <h5>notice1</h5>
-                            <ul>
-                                <li><a href="#">이 줄은 한 줄 효과입니다. 이 줄은 한 줄 효과입니다.</a></li>
-                                <li><a href="#">이 줄은 한 줄 효과입니다. 이 줄은 한 줄 효과입니다.</a></li>
-                                <li><a href="#">이 줄은 한 줄 효과입니다. 이 줄은 한 줄 효과입니다.</a></li>
-                                <li><a href="#">이 줄은 한 줄 효과입니다. 이 줄은 한 줄 효과입니다.</a></li>
-                            </ul>
-                            <a href="#" class="more" title="더 보기">More<i class="fa fa-plus-circle" aria-hidden="true"></i></a>
-                        </div>
-                        <!-- //게시판 -->
-                        <!-- 게시판 -->
-                        <div class="notice1">
-                            <h5>notice1</h5>
-                            <ul>
-                                <li><a href="#">이 줄은 한 줄 효과입니다. 이 줄은 한 줄 효과입니다.</a></li>
-                                <li><a href="#">이 줄은 한 줄 효과입니다. 이 줄은 한 줄 효과입니다.</a></li>
-                                <li><a href="#">이 줄은 한 줄 효과입니다. 이 줄은 한 줄 효과입니다.</a></li>
-                                <li><a href="#">이 줄은 한 줄 효과입니다. 이 줄은 한 줄 효과입니다.</a></li>
-                            </ul>
-                            <a href="#" class="more" title="더 보기">More<i class="fa fa-plus-circle" aria-hidden="true"></i></a>
-                        </div>
-                        <!-- //게시판 -->
-                        
                         <!-- 게시판2 
                         <div class="notice2 mt15">
                             <h5>notice2</h5>
@@ -290,137 +319,249 @@
                     <!-- //col4 -->
                     <article class="column col5">
                         <h4 class="col_tit_r">음식 종류</h4>
-                        <p class="col_desc_r">음식</p>
-                        <div class="filters_wrap">                             
-                            <input type="radio" id="reset" name="food"/>
-                            <label for="reset">ALL</label>
-                            <input type="radio" id="kr_food" name="food" />
-                            <label for= "kr_food">한식</label>
-                            <input type="radio" id="jp_food" name="food"/>
-                            <label for="jp_food">일식</label>
-                            <input type="radio" id="ch_food" name="food"/>
-                            <label for="ch_food">중식</label>
-                            <input type="radio" id="wt_food" name="food"/>
-                            <label for="wt_food">양식</label>
-                            <input type="radio" id="rm_food" name="food"/>
-                            <label for="rm_food">라면</label>
-                            <input type="radio" id="ck_food" name="food"/>
-                            <label for="ck_food">치킨</label>
-                            <input type="radio" id="jf_food" name="food"/>
-                            <label for="jf_food">패스트푸드</label>
-                            <input type="radio" id="drink" name="food"/>
-                            <label for="drink">음료</label>
-                            <input type="radio" id="dessert" name="food"/>
-                            <label for="dessert">디저트</label>       
+                        <p class="col_desc_r">음식</p>                          
+                            <div class="filters_wrap">                             
+                                <input type="radio" id="reset" name="food"/>
+                                <label for="reset">ALL</label>
+                                <input type="radio" id="kr_food" name="food" />
+                                <label for= "kr_food">한식</label>
+                                <input type="radio" id="jp_food" name="food"/>
+                                <label for="jp_food">일식</label>
+                                <input type="radio" id="ch_food" name="food"/>
+                                <label for="ch_food">중식</label>
+                                <input type="radio" id="wt_food" name="food"/>
+                                <label for="wt_food">양식</label>
+                                <input type="radio" id="rm_food" name="food"/>
+                                <label for="rm_food">라면</label>
+                                <input type="radio" id="ck_food" name="food"/>
+                                <label for="ck_food">치킨</label>
+                                <input type="radio" id="jf_food" name="food"/>
+                                <label for="jf_food">패스트</label>
+                                <input type="radio" id="drink" name="food"/>
+                                <label for="drink">음료</label>
+                                <input type="radio" id="dessert" name="food"/>
+                                <label for="dessert">디저트</label>       
 
-                            <div class ="tile kr_food">
-                                <img class="food_img" src="image/김치찌개.png">
-                            </div>
-                            <div class ="tile kr_food">
-                                <img class="food_img" src="image/불고기.png">
-                            </div>      
-                            <div class ="tile kr_food">
-                                <img class="food_img" src="image/비빔밥.png">
-                            </div>    
-                            <div class ="tile kr_food">
-                                <img class="food_img" src="image/닭갈비.png">
-                            </div> 
-                            <div class ="tile kr_food">
-                                <img class="food_img" src="image/삼계탕.png">
-                            </div>
-                            <div class ="tile kr_food">
-                                <img class="food_img" src="image/닭도리탕.png">
-                            </div>
-                            <div class ="tile kr_food">
-                                <img class="food_img" src="image/곱도리탕.png">
-                            </div>      
-                            <div class ="tile kr_food">
-                                <img class="food_img" src="image/된장찌개.png">
-                            </div>    
-                            <div class ="tile kr_food">
-                                <img class="food_img" src="image/닭갈비.png">
-                            </div> 
-                            <div class ="tile kr_food">
-                                <img class="food_img" src="image/삼계탕.png">
-                            </div>                  
-                            <div class="tile jp_food">
-                                <img class="food_img" src="image/닭갈비.png">
-                            </div>
-                            <div class="tile ch_food">
-                                <img class="food_img" src="image/김치찌개.png">
-                            </div>
-                            <div class="tile wt_food">
-                                <img class="food_img" src="image/김치찌개.png">
-                            </div>
-                            <div class="tile rm_food">
-                                <img class="food_img" src="image/김치찌개.png">
-                            </div>
-                            <div class="tile ck_food">
-                                <img class="food_img" src="image/김치찌개.png">
-                            </div>
-                            <div class="tile jf_food">
-                                <img class="food_img" src="image/김치찌개.png">
-                            </div>
-                            <div class="tile drink">
-                                <img class="food_img" src="image/김치찌개.png">
-                            </div>
-                            <div class="tile dessert">
-                                <img class="food_img" src="image/김치찌개.png">
-                            </div>
+                                
+                                <div class ="tile kr_food blogBox moreBox">
+                                    <img class="food_img" src="image/김치찌개.png">
+                                </div>
+                                <div class ="tile kr_food blogBox moreBox">
+                                    <img class="food_img" src="image/불고기.png">
+                                </div>      
+                                <div class ="tile kr_food blogBox moreBox">
+                                    <img class="food_img" src="image/비빔밥.png">
+                                </div>    
+                                <div class ="tile kr_food blogBox moreBox">
+                                    <img class="food_img" src="image/닭갈비.png">
+                                </div> 
+                                <div class ="tile kr_food blogBox moreBox">
+                                    <img class="food_img" src="image/삼계탕.png">
+                                </div>
+                                <div class ="tile kr_food blogBox moreBox">
+                                    <img class="food_img" src="image/닭도리탕.png">
+                                </div>
+                                <div class ="tile kr_food blogBox moreBox">
+                                    <img class="food_img" src="image/곱도리탕.png">
+                                </div>      
+                                <div class ="tile kr_food blogBox moreBox">
+                                    <img class="food_img" src="image/된장찌개.png">
+                                </div>    
+                                <div class ="tile kr_food blogBox moreBox">
+                                    <img class="food_img" src="image/냉면.png">
+                                </div> 
+                                <div class ="tile kr_food blogBox moreBox">
+                                    <img class="food_img" src="image/떡볶이.png">
+                                </div>      
 
-                            <div class="tile kr_food">
-                                <img class="food_img" src="image/불고기.png">
-                            </div>
-                            <div class="tile jp_food">
-                                <img class="food_img" src="image/김치찌개.png">
-                            </div>
-                            <div class="tile ch_food">
-                                <img class="food_img" src="image/김치찌개.png">
-                            </div>
-                            <div class="tile wt_food">
-                                <img class="food_img" src="image/김치찌개.png">
-                            </div>
-                            <div class="tile rm_food">
-                                <img class="food_img" src="image/김치찌개.png">
-                            </div>
-                            <div class="tile ck_food">
-                                <img class="food_img" src="image/김치찌개.png">
-                            </div>
-                            <div class="tile jf_food">
-                                <img class="food_img" src="image/김치찌개.png">
-                            </div>
-                            <div class="tile drink">
-                                <img class="food_img" src="image/김치찌개.png">
-                            </div>
-                            <div class="tile dessert">
-                                <img class="food_img" src="image/김치찌개.png">
-                            </div>
+                                <div class="tile jp_food blogBox moreBox">
+                                    <img class="food_img" src="image/회.png">
+                                </div>
+                                <div class="tile jp_food blogBox moreBox">
+                                    <img class="food_img" src="image/라멘.png">
+                                </div>
+                                <div class="tile jp_food blogBox moreBox">
+                                    <img class="food_img" src="image/초밥.png">
+                                </div>
+                                <div class="tile jp_food blogBox moreBox">
+                                    <img class="food_img" src="image/우동.png">
+                                </div>
+                                <div class="tile jp_food blogBox moreBox">
+                                    <img class="food_img" src="image/모밀.png">
+                                </div>
+                                <div class="tile jp_food blogBox moreBox">
+                                    <img class="food_img" src="image/돈까스.png">
+                                </div>
+                                <div class="tile jp_food blogBox moreBox">
+                                    <img class="food_img" src="image/가츠동.png">
+                                </div>
+                                <div class="tile jp_food blogBox moreBox">
+                                    <img class="food_img" src="image/텐동.png">
+                                </div>
+                                <div class="tile jp_food blogBox moreBox">
+                                    <img class="food_img" src="image/우나기동.png">
+                                </div>
+                                <div class="tile jp_food blogBox moreBox">
+                                    <img class="food_img" src="image/오니기리.png">
+                                </div>
+                        
+                                <div class="tile ch_food blogBox moreBox">
+                                    <img class="food_img" src="image/짜장면.png">
+                                </div>
+                                <div class="tile ch_food blogBox moreBox">
+                                    <img class="food_img" src="image/짬뽕.png">
+                                </div>
+                                <div class="tile ch_food blogBox moreBox">
+                                    <img class="food_img" src="image/탕수육.png">
+                                </div>
+                                <div class="tile ch_food blogBox moreBox">
+                                    <img class="food_img" src="image/만두.png">
+                                </div>
+                                <div class="tile ch_food blogBox moreBox">
+                                    <img class="food_img" src="image/볶음밥.png">
+                                </div>
 
-                            <div class="tile kr_food">
-                                <img class="food_img" src="image/불고기.png">
+                                <div class="tile wt_food blogBox moreBox" style="display:none">
+                                    <img class="food_img" src="image/스테이크.png">
+                                </div>
+                                <div class="tile wt_food blogBox moreBox" style="display:none">
+                                    <img class="food_img" src="image/스파게티.png">
+                                </div>
+                                <div class="tile wt_food blogBox moreBox" style="display:none">
+                                    <img class="food_img" src="image/파스타.png">
+                                </div>
+                                <div class="tile wt_food blogBox moreBox" style="display:none">
+                                    <img class="food_img" src="image/소세지.png">
+                                </div>
+                                <div class="tile wt_food blogBox moreBox" style="display:none">
+                                    <img class="food_img" src="image/샐러드.png">
+                                </div>
+
+                                <div class="tile rm_food blogBox moreBox" style="display:none">
+                                    <img class="food_img" src="image/신라면.png">
+                                </div>
+                                <div class="tile rm_food blogBox moreBox" style="display:none">
+                                    <img class="food_img" src="image/너구리.png">
+                                </div>
+                                <div class="tile rm_food blogBox moreBox" style="display:none">
+                                    <img class="food_img" src="image/안성탕면.png">
+                                </div>
+                                <div class="tile rm_food blogBox moreBox" style="display:none">
+                                    <img class="food_img" src="image/진라면.png">
+                                </div>
+                                <div class="tile rm_food blogBox moreBox" style="display:none">
+                                    <img class="food_img" src="image/비빔면.png">
+                                </div>
+                                <div class="tile rm_food blogBox moreBox" style="display:none">
+                                    <img class="food_img" src="image/짜파게티.png">
+                                </div>
+                                <div class="tile rm_food blogBox moreBox" style="display:none">
+                                    <img class="food_img" src="image/육개장.png">
+                                </div>
+
+
+
+
+
+                                <div class="tile ck_food blogBox moreBox" style="display:none">
+                                    <img class="food_img" src="image/후라이드치킨.png">
+                                </div>
+                                <div class="tile ck_food blogBox moreBox" style="display:none">
+                                    <img class="food_img" src="image/양념치킨.png">
+                                </div>
+                                <div class="tile ck_food blogBox moreBox" style="display:none">
+                                    <img class="food_img" src="image/고추바사삭.png">
+                                </div>
+                                <div class="tile ck_food blogBox moreBox" style="display:none">
+                                    <img class="food_img" src="image/크리미언.png">
+                                </div>
+                                <div class="tile ck_food blogBox moreBox" style="display:none">
+                                    <img class="food_img" src="image/숯불소금구이.png">
+                                </div>
+                                <div class="tile ck_food blogBox moreBox" style="display:none">
+                                    <img class="food_img" src="image/블랙알리오.png">
+                                </div>
+                                <div class="tile ck_food blogBox moreBox" style="display:none">
+                                    <img class="food_img" src="image/바베큐치킨.png">
+                                </div>
+
+                                <div class="tile jf_food blogBox moreBox" style="display:none">
+                                    <img class="food_img" src="image/햄버거.png">
+                                </div>
+                                <div class="tile jf_food blogBox moreBox" style="display:none">
+                                    <img class="food_img" src="image/피자.png">
+                                </div>
+                                <div class="tile jf_food blogBox moreBox" style="display:none">
+                                    <img class="food_img" src="image/핫도그.png">
+                                </div>
+                                <div class="tile jf_food blogBox moreBox" style="display:none">
+                                    <img class="food_img" src="image/샌드위치.png">
+                                </div>
+
+                                <div class="tile drink blogBox moreBox" style="display:none">
+                                    <img class="food_img" src="image/커피.png">
+                                </div>
+                                <div class="tile drink blogBox moreBox" style="display:none">
+                                    <img class="food_img" src="image/콜라.png">
+                                </div>
+                                <div class="tile drink blogBox moreBox" style="display:none">
+                                    <img class="food_img" src="image/오렌지주스.png">
+                                </div>
+                                <div class="tile drink blogBox moreBox" style="display:none">
+                                    <img class="food_img" src="image/딸기주스.png">
+                                </div>
+                                <div class="tile drink blogBox moreBox" style="display:none">
+                                    <img class="food_img" src="image/딸기쉐이크.png">
+                                </div>
+                                <div class="tile drink blogBox moreBox" style="display:none">
+                                    <img class="food_img" src="image/수박주스.png">
+                                </div>
+                                <div class="tile drink blogBox moreBox" style="display:none">
+                                    <img class="food_img" src="image/블루베리주스.png">
+                                </div>
+                                <div class="tile drink blogBox moreBox" style="display:none">
+                                    <img class="food_img" src="image/바나나주스.png">
+                                </div>
+                                <div class="tile drink blogBox moreBox" style="display:none">
+                                    <img class="food_img" src="image/레모네이드.png">
+                                </div>
+                                <div class="tile drink blogBox moreBox" style="display:none">
+                                    <img class="food_img" src="image/버블티.png">
+                                </div>
+                                <div class="tile drink blogBox moreBox" style="display:none">
+                                    <img class="food_img" src="image/맥주.png">
+                                </div>
+
+                                <div class="tile dessert blogBox moreBox" style="display:none">
+                                    <img class="food_img" src="image/아이스크림.png">
+                                </div>
+                                <div class="tile dessert blogBox moreBox" style="display:none">
+                                    <img class="food_img" src="image/빙수.png">
+                                </div>
+                                <div class="tile dessert blogBox moreBox" style="display:none">
+                                    <img class="food_img" src="image/도넛.png">
+                                </div>
+                                <div class="tile dessert blogBox moreBox" style="display:none">
+                                    <img class="food_img" src="image/케이크.png">
+                                </div>
+                                <div class="tile dessert blogBox moreBox" style="display:none">
+                                    <img class="food_img" src="image/와플.png">
+                                </div>
+                                <div class="tile dessert blogBox moreBox" style="display:none">
+                                    <img class="food_img" src="image/초콜릿.png">
+                                </div>
+                                <div id="loadMore" class="tile_btn" style="">
+                                    <a href="#">더보기</a>
+                                  </div>
+                                <!-- 접기 펴기 간단 구현
+                                <details>
+                                    <summary>더 많은 내용</summary>
+                                    <p>내부에 넣을 내용을 입력해주세요</p>
+                                </details>
+                                <!--//-->
                             </div>
-                            <div class="tile jp_food">
-                                <img class="food_img" src="image/김치찌개.png">
-                            </div>
-                            <div class="tile ch_food">
-                                <img class="food_img" src="image/김치찌개.png">
-                            </div>
-                            <div class="tile wt_food">
-                                <img class="food_img" src="image/김치찌개.png">
-                            </div>
-                            <div class="tile rm_food">
-                                <img class="food_img" src="image/김치찌개.png">
-                            </div>
-                            <div class="tile ck_food">
-                                <img class="food_img" src="image/김치찌개.png">
-                            </div>
-                            <div class="tile jf_food">
-                                <img class="food_img" src="image/김치찌개.png">
-                            </div>
-                            </div>
-                        </div>
-                        <!-- // -->                                        
-                    </article>
+                        <!-- // -->                               
+                    </article>                    
                 </section>
             </div>
         </section>
@@ -456,40 +597,24 @@
     <script src="js/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="js/menu.js"></script>
     <script type="text/javascript" src="js/category.js"></script>
-
-    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <!--
-    <script src="slick/slick.js" type="text/javascript" charset="utf-8"></script> 
-    <script type="text/javascript">
-        // slick center
-        $('.center_slider').slick({
-            centerMode: true,
-            centerPadding: '60px',
-            slidesToShow: 1,
-            responsive: [
-                {
-                breakpoint: 768,
-                settings: {
-                    arrows: false,
-                    centerMode: true,
-                    centerPadding: '40px',
-                    slidesToShow: 3
-                }
-                },
-                {
-                breakpoint: 480,
-                settings: {
-                    arrows: false,
-                    centerMode: true,
-                    centerPadding: '40px',
-                    slidesToShow: 1
-                }
-                }
-            ]
-        });	
-    </script>   -->
     <script>
-        //접기/펼치기
+        // 로드버튼
+        $( document ).ready(function () {
+            $(".moreBox").slice(0, 3).show();
+                if ($(".blogBox:hidden").length != 0) {
+                    $("#loadMore").show();
+                }   
+                $("#loadMore").on('click', function (e) {
+                    e.preventDefault();
+                    $(".moreBox:hidden").slice(0, 45).slideDown();
+                    if ($(".moreBox:hidden").length == 0) {
+                        $("#loadMore").fadeOut('nomal');
+                    }
+                });
+            });
+    </script>
+    <script>
+        // 접기/펼치기
         $(".btn").click(function(event){
             event.preventDefault();
             $(".nav").slideToggle();
