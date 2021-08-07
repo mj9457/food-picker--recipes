@@ -91,6 +91,11 @@
 
 /* 게시판1 */
 .notice1 {position: relative;}
+.notice1 h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15%;
+}
 .notice1 h5 {font-size: 14px; color: #2f7fa6; padding-bottom: 5px;}
 .notice1 li {position: relative; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding-left: 8px;}
 .notice1 li:before {
@@ -107,9 +112,10 @@
     font-size: 10px;
 }
 
-summary .more_btn {
-    display: none;
-    text-align: right;
+summary.more_btn {
+    display: list-item;
+    margin-bottom: 3%;
+    font-size: 15px;
 }
 
 /* 게시판2 */

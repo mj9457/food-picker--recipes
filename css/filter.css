@@ -22,7 +22,17 @@
     cursor:pointer;
   }
   input[type="radio"][id="kr_food"]:checked + label {
-    background:#6666ff;
+    background: #FFAFBD;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #ffc3a0, #FFAFBD);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #ffc3a0, #FFAFBD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+  }
+  input[type="radio"][id="kr_food"]:hover + label {
+    background: #D66D75;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E29587, #D66D75);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E29587, #D66D75); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   }
   input[type="radio"][id="kr_food"]:checked ~ .jp_food, input[type="radio"][id="kr_food"]:checked ~ .ch_food,
   input[type="radio"][id="kr_food"]:checked ~ .wt_food, input[type="radio"][id="kr_food"]:checked ~ .rm_food,
@@ -38,7 +48,10 @@
   }
 
   input[type="radio"][id="jp_food"]:checked + label {
-    background:#ff4466;
+    background: #ee9ca7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   }
   input[type="radio"][id="jp_food"]:checked ~ .ch_food, input[type="radio"][id="jp_food"]:checked ~ .wt_food,
   input[type="radio"][id="jp_food"]:checked ~ .rm_food, input[type="radio"][id="jp_food"]:checked ~ .ck_food,
