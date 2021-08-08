@@ -17,10 +17,12 @@
     <link rel="stylesheet" href="css/style.css">
 
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="load-more-button.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.css"/>
 
     <title>오늘 뭐먹지? & 요리 레시피</title>    
 </head>
@@ -394,315 +396,113 @@
                 <section id="cont_center">
                     <h3 class="ir_su">반응형 사이트 가운데 컨텐츠</h3>
                     <article class="column col4">
-                        <h4 class="col_tit_r">오늘의 메뉴</h4>
-                        <p class="col_desc_r">어떤 메뉴가 좋을까?</p>
-                        <div class="random_eat">
-                            <span></span>
-                            <div class="random_eat_menu">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                        </div>                
                         
-                        <!--
-                        <h4 class="col_cont_tit">재료(1인분 기준)</h4>
-                        <p class="col_cont_body">-밥1공기<br>-계란 1~2개<br>-대파,버터,후추 (없어도 문제없음)<br>-굴소스 (진간장 또는 소금도 문제없음)</p>
-                        <p class="col_cont_body_line"></p>
-                        <h4 class="col_cont_tit">방법</h4>
-                        <p class="col_cont_body">1. 밥과 생계란을 비벼놓는다.<br>2. 팬이 차가울때 기름과 파를 같이 넣고 가열시켜 파기름을 낸다.<br>3. 파향이 맛있게 올라오면 비벼둔 밥을 넣고 같이 볶아준다.<br>4. 맛있게 먹는다.</p>
-                        <p class="col_cont_body_line"></p>
-                        <h4 class="col_cont_tit">주의사항</h4>
-                        <p class="col_cont_body_last">* 팬에 기름과 파를 같이 넣어 서서히 가열시키세요! *<br>
-                            * 굴소스 대신 간장이나 소금으로 간하세요! *<br>
-                            * 버터 안넣어도 괜찮습니다! *
-                        </p>-->
-                            
-                        <!--
-                        <section class="center_slider">
-                            <div>
-                                <img src="http://placehold.it/100x100?text=1">
+                        <h4 class="col_tit_r">레시피 모음</h4>
+                        <p class="col_desc_r">어떤 레시피로 요리해볼까</p>
+                        <div class="table_form">
+                                <table class="table table-striped table-class" id= "table-id">
+                                    <thead>
+                                        <tr>
+                                            <th>제목</th>
+                                            <th>주재료</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><a href="#">계란볶음밥 만들기<br>::고슬고슬 황금볶음밥::</a></td>
+                                            <td>계란,밥</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#">식빵계란토스트 만들기<br>::아침을 깨우는 달콤함::</a></td>
+                                            <td>식빵, 계란</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#">식빵계란토스트 만들기<br>::아침을 깨우는 달콤함::</a></td>
+                                            <td>식빵, 계란</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#">식빵계란토스트 만들기<br>::아침을 깨우는 달콤함::</a></td>
+                                            <td>식빵, 계란</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#">식빵계란토스트 만들기<br>::아침을 깨우는 달콤함::</a></td>
+                                            <td>식빵, 계란</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#">식빵계란토스트 만들기<br>::아침을 깨우는 달콤함::</a></td>
+                                            <td>식빵, 계란</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#">식빵계란토스트 만들기<br>::아침을 깨우는 달콤함::</a></td>
+                                            <td>식빵, 계란</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#">식빵계란토스트 만들기<br>::아침을 깨우는 달콤함::</a></td>
+                                            <td>식빵, 계란</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#">식빵계란토스트 만들기<br>::아침을 깨우는 달콤함::</a></td>
+                                            <td>식빵, 계란</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#">식빵계란토스트 만들기<br>::아침을 깨우는 달콤함::</a></td>
+                                            <td>식빵, 계란</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#">식빵계란토스트 만들기<br>::아침을 깨우는 달콤함::</a></td>
+                                            <td>식빵, 계란</td>
+                                        </tr>
+                                    </tbody>
+                                </table>      
+                                <!--		Start Pagination -->
+                                <div class='pagination-container' >
+                                    <nav>
+                                    <ul id="pagination" class="pagination">        
+                                        <li data-page="prev" >
+                                            <span> < <span class="sr-only">(current)</span></span>
+                                        </li>
+                                    <!--	Here the JS Function Will Add the Rows -->
+                                        <li data-page="next" id="prev">
+                                            <span> > <span class="sr-only">(current)</span></span>
+                                        </li>
+                                    </ul>
+                                    </nav>
+                                </div>
+                                <div class="form-group"> 
+                                    <!--		Show Numbers Of Rows 		-->
+                                    <select class="form-control" name="state" id="maxRows">
+                                        <option value="5000">전부 보기</option>
+                                        <option value="5">5개씩 보기</option>
+                                        <option value="10">10개씩 보기</option>
+                                        <option value="15">15개씩 보기</option>
+                                        <option value="20">20개씩 보기</option>
+                                        <option value="50">50개씩 보기</option>
+                                        <option value="70">70개씩 보기</option>
+                                        <option value="100">100개씩 보기</option>
+                                    </select>                           
+                                </div>
                             </div>
-                            <div>
-                                <img src="http://placehold.it/100x100?text=2">
+                            <!-- 		End of Container -->
+                            <!--  Developed By Yasser Mas --> 
+                        <div class="main_content_wrap">
+                            <p class="main_content_tit"><span style="border-bottom: 12px solid #FFAD5B; padding: 0 0 0 0.2em;">계란볶음밥</span></p>
+                            <div class="video">
+                                <iframe src="https://www.youtube.com/embed/qUDEyONQaCA" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             </div>
-                            <div>
-                                <img src="http://placehold.it/100x100?text=3">
-                            </div>
-                            <div>
-                                <img src="http://placehold.it/100x100?text=4">
-                            </div>
-                            <div>
-                                <img src="http://placehold.it/100x100?text=5">
-                            </div>
-                            <div>
-                                <img src="http://placehold.it/100x100?text=6">
-                            </div>
-                            <div>
-                                <img src="http://placehold.it/100x100?text=7">
-                            </div>
-                            <div>
-                                <img src="http://placehold.it/100x100?text=8">
-                            </div>
-                            <div>
-                                <img src="http://placehold.it/100x100?text=9">
-                            </div>
-                        </section>-->
+                            <h4 class="col_cont_tit">재료(1인분 기준)</h4>
+                            <p class="col_cont_body">-밥1공기<br>-계란 1~2개<br>-대파,버터,후추 (없어도 문제없음)<br>-굴소스 (진간장 또는 소금도 문제없음)</p>
+                            <p class="col_cont_body_line"></p>
+                            <h4 class="col_cont_tit">방법</h4>
+                            <p class="col_cont_body">1. 밥과 생계란을 비벼놓는다.<br>2. 팬이 차가울때 기름과 파를 같이 넣고 가열시켜 파기름을 낸다.<br>3. 파향이 맛있게 올라오면 비벼둔 밥을 넣고 같이 볶아준다.<br>4. 맛있게 먹는다.</p>
+                            <p class="col_cont_body_line"></p>
+                            <h4 class="col_cont_tit">주의사항</h4>
+                            <p class="col_cont_body_last">* 팬에 기름과 파를 같이 넣어 서서히 가열시키세요! *<br>
+                                * 굴소스 대신 간장이나 소금으로 간하세요! *<br>
+                                * 버터 안넣어도 괜찮습니다! *
+                            </p>
+                        </div>
                     </article>
-                    <!-- //col4 -->
-                    <article class="column col5">
-                        <h4 class="col_tit_r">음식 종류</h4>
-                        <p class="col_desc_r">음식</p>                          
-                            <div class="filters_wrap">                             
-                                <input type="radio" id="reset" name="food"/>
-                                <label for="reset">ALL</label>
-                                <input type="radio" id="kr_food" name="food" />
-                                <label for= "kr_food">한식</label>
-                                <input type="radio" id="jp_food" name="food"/>
-                                <label for="jp_food">일식</label>
-                                <input type="radio" id="ch_food" name="food"/>
-                                <label for="ch_food">중식</label>
-                                <input type="radio" id="wt_food" name="food"/>
-                                <label for="wt_food">양식</label>
-                                <input type="radio" id="rm_food" name="food"/>
-                                <label for="rm_food">라면</label>
-                                <input type="radio" id="ck_food" name="food"/>
-                                <label for="ck_food">치킨</label>
-                                <input type="radio" id="jf_food" name="food"/>
-                                <label for="jf_food">패스트</label>
-                                <input type="radio" id="drink" name="food"/>
-                                <label for="drink">음료</label>
-                                <input type="radio" id="dessert" name="food"/>
-                                <label for="dessert">디저트</label>       
-
-                                
-                                <div class ="tile kr_food blogBox moreBox">
-                                    <img class="food_img" src="image/김치찌개.png">
-                                </div>
-                                <div class ="tile kr_food blogBox moreBox">
-                                    <img class="food_img" src="image/불고기.png">
-                                </div>      
-                                <div class ="tile kr_food blogBox moreBox">
-                                    <img class="food_img" src="image/비빔밥.png">
-                                </div>    
-                                <div class ="tile kr_food blogBox moreBox">
-                                    <img class="food_img" src="image/닭갈비.png">
-                                </div> 
-                                <div class ="tile kr_food blogBox moreBox">
-                                    <img class="food_img" src="image/삼계탕.png">
-                                </div>
-                                <div class ="tile kr_food blogBox moreBox">
-                                    <img class="food_img" src="image/닭도리탕.png">
-                                </div>
-                                <div class ="tile kr_food blogBox moreBox">
-                                    <img class="food_img" src="image/곱도리탕.png">
-                                </div>      
-                                <div class ="tile kr_food blogBox moreBox">
-                                    <img class="food_img" src="image/된장찌개.png">
-                                </div>    
-                                <div class ="tile kr_food blogBox moreBox">
-                                    <img class="food_img" src="image/냉면.png">
-                                </div> 
-                                <div class ="tile kr_food blogBox moreBox">
-                                    <img class="food_img" src="image/떡볶이.png">
-                                </div>      
-
-                                <div class="tile jp_food blogBox moreBox">
-                                    <img class="food_img" src="image/회.png">
-                                </div>
-                                <div class="tile jp_food blogBox moreBox">
-                                    <img class="food_img" src="image/라멘.png">
-                                </div>
-                                <div class="tile jp_food blogBox moreBox">
-                                    <img class="food_img" src="image/초밥.png">
-                                </div>
-                                <div class="tile jp_food blogBox moreBox">
-                                    <img class="food_img" src="image/우동.png">
-                                </div>
-                                <div class="tile jp_food blogBox moreBox">
-                                    <img class="food_img" src="image/모밀.png">
-                                </div>
-                                <div class="tile jp_food blogBox moreBox">
-                                    <img class="food_img" src="image/돈까스.png">
-                                </div>
-                                <div class="tile jp_food blogBox moreBox">
-                                    <img class="food_img" src="image/가츠동.png">
-                                </div>
-                                <div class="tile jp_food blogBox moreBox">
-                                    <img class="food_img" src="image/텐동.png">
-                                </div>
-                                <div class="tile jp_food blogBox moreBox">
-                                    <img class="food_img" src="image/우나기동.png">
-                                </div>
-                                <div class="tile jp_food blogBox moreBox">
-                                    <img class="food_img" src="image/오니기리.png">
-                                </div>
-                        
-                                <div class="tile ch_food blogBox moreBox">
-                                    <img class="food_img" src="image/짜장면.png">
-                                </div>
-                                <div class="tile ch_food blogBox moreBox">
-                                    <img class="food_img" src="image/짬뽕.png">
-                                </div>
-                                <div class="tile ch_food blogBox moreBox">
-                                    <img class="food_img" src="image/탕수육.png">
-                                </div>
-                                <div class="tile ch_food blogBox moreBox">
-                                    <img class="food_img" src="image/만두.png">
-                                </div>
-                                <div class="tile ch_food blogBox moreBox">
-                                    <img class="food_img" src="image/볶음밥.png">
-                                </div>
-
-                                <div class="tile wt_food blogBox moreBox" style="display:none">
-                                    <img class="food_img" src="image/스테이크.png">
-                                </div>
-                                <div class="tile wt_food blogBox moreBox" style="display:none">
-                                    <img class="food_img" src="image/스파게티.png">
-                                </div>
-                                <div class="tile wt_food blogBox moreBox" style="display:none">
-                                    <img class="food_img" src="image/파스타.png">
-                                </div>
-                                <div class="tile wt_food blogBox moreBox" style="display:none">
-                                    <img class="food_img" src="image/소세지.png">
-                                </div>
-                                <div class="tile wt_food blogBox moreBox" style="display:none">
-                                    <img class="food_img" src="image/샐러드.png">
-                                </div>
-
-                                <div class="tile rm_food blogBox moreBox" style="display:none">
-                                    <img class="food_img" src="image/신라면.png">
-                                </div>
-                                <div class="tile rm_food blogBox moreBox" style="display:none">
-                                    <img class="food_img" src="image/너구리.png">
-                                </div>
-                                <div class="tile rm_food blogBox moreBox" style="display:none">
-                                    <img class="food_img" src="image/안성탕면.png">
-                                </div>
-                                <div class="tile rm_food blogBox moreBox" style="display:none">
-                                    <img class="food_img" src="image/진라면.png">
-                                </div>
-                                <div class="tile rm_food blogBox moreBox" style="display:none">
-                                    <img class="food_img" src="image/비빔면.png">
-                                </div>
-                                <div class="tile rm_food blogBox moreBox" style="display:none">
-                                    <img class="food_img" src="image/짜파게티.png">
-                                </div>
-                                <div class="tile rm_food blogBox moreBox" style="display:none">
-                                    <img class="food_img" src="image/육개장.png">
-                                </div>
-
-
-
-
-
-                                <div class="tile ck_food blogBox moreBox" style="display:none">
-                                    <img class="food_img" src="image/후라이드치킨.png">
-                                </div>
-                                <div class="tile ck_food blogBox moreBox" style="display:none">
-                                    <img class="food_img" src="image/양념치킨.png">
-                                </div>
-                                <div class="tile ck_food blogBox moreBox" style="display:none">
-                                    <img class="food_img" src="image/고추바사삭.png">
-                                </div>
-                                <div class="tile ck_food blogBox moreBox" style="display:none">
-                                    <img class="food_img" src="image/크리미언.png">
-                                </div>
-                                <div class="tile ck_food blogBox moreBox" style="display:none">
-                                    <img class="food_img" src="image/숯불소금구이.png">
-                                </div>
-                                <div class="tile ck_food blogBox moreBox" style="display:none">
-                                    <img class="food_img" src="image/블랙알리오.png">
-                                </div>
-                                <div class="tile ck_food blogBox moreBox" style="display:none">
-                                    <img class="food_img" src="image/바베큐치킨.png">
-                                </div>
-
-                                <div class="tile jf_food blogBox moreBox" style="display:none">
-                                    <img class="food_img" src="image/햄버거.png">
-                                </div>
-                                <div class="tile jf_food blogBox moreBox" style="display:none">
-                                    <img class="food_img" src="image/피자.png">
-                                </div>
-                                <div class="tile jf_food blogBox moreBox" style="display:none">
-                                    <img class="food_img" src="image/핫도그.png">
-                                </div>
-                                <div class="tile jf_food blogBox moreBox" style="display:none">
-                                    <img class="food_img" src="image/샌드위치.png">
-                                </div>
-
-                                <div class="tile drink blogBox moreBox" style="display:none">
-                                    <img class="food_img" src="image/커피.png">
-                                </div>
-                                <div class="tile drink blogBox moreBox" style="display:none">
-                                    <img class="food_img" src="image/콜라.png">
-                                </div>
-                                <div class="tile drink blogBox moreBox" style="display:none">
-                                    <img class="food_img" src="image/오렌지주스.png">
-                                </div>
-                                <div class="tile drink blogBox moreBox" style="display:none">
-                                    <img class="food_img" src="image/딸기주스.png">
-                                </div>
-                                <div class="tile drink blogBox moreBox" style="display:none">
-                                    <img class="food_img" src="image/딸기쉐이크.png">
-                                </div>
-                                <div class="tile drink blogBox moreBox" style="display:none">
-                                    <img class="food_img" src="image/수박주스.png">
-                                </div>
-                                <div class="tile drink blogBox moreBox" style="display:none">
-                                    <img class="food_img" src="image/블루베리주스.png">
-                                </div>
-                                <div class="tile drink blogBox moreBox" style="display:none">
-                                    <img class="food_img" src="image/바나나주스.png">
-                                </div>
-                                <div class="tile drink blogBox moreBox" style="display:none">
-                                    <img class="food_img" src="image/레모네이드.png">
-                                </div>
-                                <div class="tile drink blogBox moreBox" style="display:none">
-                                    <img class="food_img" src="image/버블티.png">
-                                </div>
-                                <div class="tile drink blogBox moreBox" style="display:none">
-                                    <img class="food_img" src="image/맥주.png">
-                                </div>
-
-                                <div class="tile dessert blogBox moreBox" style="display:none">
-                                    <img class="food_img" src="image/아이스크림.png">
-                                </div>
-                                <div class="tile dessert blogBox moreBox" style="display:none">
-                                    <img class="food_img" src="image/빙수.png">
-                                </div>
-                                <div class="tile dessert blogBox moreBox" style="display:none">
-                                    <img class="food_img" src="image/도넛.png">
-                                </div>
-                                <div class="tile dessert blogBox moreBox" style="display:none">
-                                    <img class="food_img" src="image/케이크.png">
-                                </div>
-                                <div class="tile dessert blogBox moreBox" style="display:none">
-                                    <img class="food_img" src="image/와플.png">
-                                </div>
-                                <div class="tile dessert blogBox moreBox" style="display:none">
-                                    <img class="food_img" src="image/초콜릿.png">
-                                </div>
-                                <div id="loadMore" class="tile_btn" style="">
-                                    <a href="#">더보기</a>
-                                  </div>
-                                <!-- 접기 펴기 간단 구현
-                                <details>
-                                    <summary>더 많은 내용</summary>
-                                    <p>내부에 넣을 내용을 입력해주세요</p>
-                                </details>
-                                <!--//-->
-                            </div>
-                        <!-- // -->                               
-                    </article>                    
+                    <!-- //col4 -->                            
                 </section>
             </div>
         </section>
@@ -736,24 +536,7 @@
 
     <!-- JavaScript Libraries -->
     <script src="js/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="js/menu.js"></script>
-    <script type="text/javascript" src="js/category.js"></script>
-    <script>
-        // 로드버튼
-        $( document ).ready(function () {
-            $(".moreBox").slice(0, 3).show();
-                if ($(".blogBox:hidden").length != 0) {
-                    $("#loadMore").show();
-                }   
-                $("#loadMore").on('click', function (e) {
-                    e.preventDefault();
-                    $(".moreBox:hidden").slice(0, 45).slideDown();
-                    if ($(".moreBox:hidden").length == 0) {
-                        $("#loadMore").fadeOut('nomal');
-                    }
-                });
-            });
-    </script>
+    <script src="js/scripts.js"></script>
     <script>
         // 접기/펼치기
         $(".btn").click(function(event){
