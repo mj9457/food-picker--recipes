@@ -52,6 +52,7 @@
     color: #2f7fa6;
     padding-bottom: 5px;
     font-weight: bold;
+    text-align: center;
 }
 .column .col_desc_r {
     border-bottom: 1px dashed #dbdbdb; 
@@ -60,6 +61,7 @@
     color: #878787;
     line-height: 18px;
     font-family: 'Cafe24SsurroundAir', sans-serif;
+    text-align: center;
 }
 
 .column.col1 {border-bottom: 1px solid #dbdbdb;}
@@ -273,7 +275,7 @@ summary.more_btn {
 }
 
 .table td:nth-child(1), .table td:nth-child(3) {
-    padding-top: 18px;
+    vertical-align: middle;
 }
 
 /* 메인컨텐츠 */
@@ -286,6 +288,11 @@ summary.more_btn {
 
 .main_content_wrap {
  margin-left: 2%;   
+}
+
+.main_content_tit_underline {
+    border-bottom: 12px solid #FFAD5B;
+    padding: 0 0 0 0.2em;
 }
 
 #pagination {

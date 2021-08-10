@@ -17,7 +17,11 @@ body {background-color: #9A552B;}
 #footer {border-top: 1px solid #dbdbdb;} 
 
 /* 컨테이너 */
-.container {position: relative; width: 1200px; margin: 0 auto; /*background: rgba(0,0,0,0.3);*/}
+.container {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    /*background: rgba(0,0,0,0.3);*/}
 
 /* media query*/
 /* 화면 너비 0 ~ 3000px */
@@ -86,7 +90,14 @@ body {background-color: #9A552B;}
         border-left: 0;
     }
     
+    .column.col1 .menu li a {
+        font-size: 13px;
+    }
+
     .column.col2 {display: none;}
+    .column .col_tit_r , .column .col_desc_r  {
+        text-align: left;
+    }
 
     .random_eat_menu {
         margin: 0%;
@@ -173,6 +184,11 @@ body {background-color: #9A552B;}
     .nav {
         margin-top: 20px;
     }*/
+}
+
+/* 화면 너비 0 ~ 424px */
+@media (max-width: 424px){
+
 }
 
 /* 화면 너비 0 ~ 320px */
