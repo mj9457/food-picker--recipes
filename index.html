@@ -22,7 +22,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="load-more-button.js"></script>
 
-    <title>오늘 뭐먹지? & 요리 레시피</title>    
+    <title>&#35;오늘 뭐먹지? &#35;요리 레시피</title>    
 </head>
 
 <body>
@@ -37,7 +37,7 @@
                     </div>
                     <!-- //header_menu -->
                     <div class="header_tit">
-                        <h1>오늘 뭐먹지? & 요리 레시피</h1><br>
+                        <h1>&#35;오늘 뭐먹지? &#35;요리 레시피</h1><br>
                         <a href="#">메인화면 바로가기</a>
                     </div>
                     <!-- //header_tit -->
@@ -92,6 +92,7 @@
 
     <article id="title">
         <div class="container">
+            <a id="back-to-top"></a>
             <div class="title">
                 <h2>"오늘 뭐먹지?"</h2>
                 <a href="#" class="btn">
@@ -120,7 +121,7 @@
                                 <li><a href="food_worldcup.html">음식 월드컵 <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
                                 <li><a href="shopping_list.html">장볼 목록 <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
                                 <li><a href="https://www.youtube.com/results?search_query=%EC%9A%94%EB%A6%AC">요리 유튜브 <i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
-                                <li><a href="#">요리<i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
+                                <li><a href="#">요리 검색<i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
                             </ul>
                         </div>
                         <!-- //메뉴 -->
@@ -411,21 +412,7 @@
                                 <span></span>
                                 <span></span>
                             </div>
-                        </div>                
-                        
-                        <!--
-                        <h4 class="col_cont_tit">재료(1인분 기준)</h4>
-                        <p class="col_cont_body">-밥1공기<br>-계란 1~2개<br>-대파,버터,후추 (없어도 문제없음)<br>-굴소스 (진간장 또는 소금도 문제없음)</p>
-                        <p class="col_cont_body_line"></p>
-                        <h4 class="col_cont_tit">방법</h4>
-                        <p class="col_cont_body">1. 밥과 생계란을 비벼놓는다.<br>2. 팬이 차가울때 기름과 파를 같이 넣고 가열시켜 파기름을 낸다.<br>3. 파향이 맛있게 올라오면 비벼둔 밥을 넣고 같이 볶아준다.<br>4. 맛있게 먹는다.</p>
-                        <p class="col_cont_body_line"></p>
-                        <h4 class="col_cont_tit">주의사항</h4>
-                        <p class="col_cont_body_last">* 팬에 기름과 파를 같이 넣어 서서히 가열시키세요! *<br>
-                            * 굴소스 대신 간장이나 소금으로 간하세요! *<br>
-                            * 버터 안넣어도 괜찮습니다! *
-                        </p>-->
-                            
+                        </div>
                         <!--
                         <section class="center_slider">
                             <div>
@@ -692,14 +679,8 @@
                                     <img class="food_img" src="image/초콜릿.png">
                                 </div>
                                 <div id="loadMore" class="tile_btn" style="">
-                                    <a href="#">더보기</a>
+                                    <a href="#" class="tile_btn_a">더보기</a>
                                   </div>
-                                <!-- 접기 펴기 간단 구현
-                                <details>
-                                    <summary>더 많은 내용</summary>
-                                    <p>내부에 넣을 내용을 입력해주세요</p>
-                                </details>
-                                <!--//-->
                             </div>
                         <!-- // -->                               
                     </article>                    
@@ -708,23 +689,19 @@
         </section>
         <!-- //contents -->
     </main>
-
+    
     <footer id="footer">
         <div class="container">
             <div class="row">
                 <div class="footer">
-                    <ul>
-                        <li><a href="#">사이트 도움말</a></li>
-                        <li><a href="#">사이트 이용약관</a></li>
-                        <li><a href="#">사이트 운영원칙</a></li>
-                        <li><a href="#"><strong>개인정보취급방침</strong></a></li>
-                        <li><a href="#">책임의 한계와 법적고지</a></li>
-                        <li><a href="#">게시중단요청서비스</a></li>
-                        <li><a href="#">고객센터</a></li>
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="github" href="#"><i class="fa fa-github"></i></a></li>
+                        <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
                     </ul>
                     <address>
                         Copyright ©
-                        <a href="http://webstoryboy.co.kr"><strong>ROZES</strong></a>
+                        <a href="mailto:mj9457@naver.com" target="_top"><strong>ROZES</strong></a>
                         All Rights Reserved.
                     </address>
                 </div>
@@ -739,6 +716,23 @@
     <script type="text/javascript" src="js/menu.js"></script>
     <script type="text/javascript" src="js/category.js"></script>
     <script type="text/javascript" src="js/content.js"></script>
+    <script>
+        // top 버튼
+        $(function(){
+            $('#back-to-top').on('click',function(e){
+                e.preventDefault();
+                $('html,body').animate({scrollTop:0},600);
+            });
+            
+            $(window).scroll(function() {
+                if ($(document).scrollTop() > 100) {
+                $('#back-to-top').addClass('show');
+                } else {
+                $('#back-to-top').removeClass('show');
+                }
+            });
+        });
+    </script>
     <script>
         // 로드버튼
         $( document ).ready(function () {

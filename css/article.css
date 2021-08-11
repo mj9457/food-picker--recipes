@@ -5,14 +5,14 @@
 .title h2 {
     font-family: 'SDSamliphopangche_Outline';
     cursive; font-size: 39px;
-    color: #0093bd;
+    color: #ff9800;
     padding: 5px 0;
 }
 .title .btn {
     position: absolute; top: -9px;
     width: 60px; height: 60px;
-    line-height: 60px;
-    background: #3192bf; color: #fff;
+    line-height: 55px;
+    background: #ff9800; color: #fff;
     font-size: 35px;
     border-radius: 50%;
     transition: all 0.3s ease;
@@ -65,9 +65,11 @@
 }
 
 .column.col1 {border-bottom: 1px solid #dbdbdb;}
-.column.col2 {}
+.column.col2 {min-height: 911px;}
+.column.col2_1 {min-height: 1188px;}
 .column.col3 {}
-.column.col4 {}
+.column.col4 {border-bottom: 1px solid #dbdbdb;}
+.column.col4_1 {}
 .column.col5 {border-bottom: 0;}
 .column.col6 {}
 .column.col7 {}
@@ -228,6 +230,7 @@ summary.more_btn {
 .random_eat span:first-child {
     display: block;
     font-size: 26px;
+    font-family: 'SDSamliphopangche_Outline';
     font-weight: bold;
     margin-bottom: 10px;
     text-align: center;
@@ -236,6 +239,7 @@ summary.more_btn {
 .random_eat span:nth-child(n+2) {
     display: inline-block;
     font-size: 18px;
+    font-family: 'Cafe24SsurroundAir';
     width: 33%;
     margin-right: 0%;
 }
@@ -299,3 +303,199 @@ summary.more_btn {
     margin: 0px;
     margin-bottom: 5px;
 }
+
+/*  위로이동 버튼 */
+#back-to-top {
+    display: inline-block;
+    background-color: #FF9800;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  }
+  #back-to-top::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+  }
+  #back-to-top:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+  #back-to-top:active {
+    background-color: #555;
+  }
+  #back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* to-dolist */
+  .js-toDoWrite, .list-title,
+  .clear > .js-clear-button {      
+    font-family: 'Cafe24SsurroundAir', sans-serif;
+    font-weight: bold;
+  }
+  .body_column {
+    margin-left: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    position: relative;
+  }
+  
+  .toDoList input,
+  .toDoList li {
+    width: 360px;
+  }
+  
+  .checked input,
+  .checked li {
+    width: 360px;
+  }
+  
+  .toDoForm {
+    margin-top: 20px;
+  }
+  
+  .toDoForm input::placeholder {
+    font-size: 20px;
+  }
+  
+  .todo_column {
+    background-color: #c0484866;
+    border-radius: 20px;
+    box-sizing: border-box;
+    min-height: 1161px;
+  }
+  
+  .js-toDoWrite {
+    border: none;
+    background-color: transparent;
+    box-sizing: border-box;
+    padding: 6px 10px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+    transition: border-color 0.5s ease-in-out;
+    width: 380px;
+    text-align: center;
+  }
+  .js-toDoWrite::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .js-toDoWrite:focus {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .js-toDoList {
+    margin: 20px;
+    padding-inline-start: 0px;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .js-toDoList > ul,
+  .checked > ul {
+    font-size: 20px;
+  }
+  .js-toDoList > li,
+  .checked > li {
+    list-style: none;
+    display: flex;
+    position: relative;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 20px 16px;
+    border-radius: 6px;
+    margin-bottom: 4px;
+    color: black;
+    font-size: 20px;
+    animation: fadeIn 0.5s ease-in;
+  }
+  
+  .js-toDoList > li > span,
+  .checked > li > span {
+    margin-left: 10px;    
+    font-family: 'Cafe24SsurroundAir', sans-serif;
+    font-weight: bold;
+  }
+  
+  .js-toDoWrite li span {
+    margin-left: 10px;
+    font-size: 20px;
+  }
+  
+  .checked li {
+    opacity: 0.7;
+  }
+  
+  .checked .fa-check-square {
+    color: tomato;
+  }
+  
+  #delBtn {
+    border: none;
+    position: absolute;
+    text-decoration: none;
+    right: 20px;
+  }
+  
+  #strikeout {
+    height: 2px;
+    width: 79%;
+    background-color: tomato;
+    position: absolute;
+    left: 38px;
+  }
+  
+  .fa-square,
+  .fa-check-square,
+  #delBtn,
+  .clear span:hover {
+    cursor: pointer;
+  }
+  
+  .toDoList,
+  .checked {
+    margin: 10px;
+  }
+  
+  .list-title {
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 15px;
+    margin: 15px 0px 0px 0px;
+  }
+  
+  .clear {
+    display: flex;
+    width: 80%;
+    justify-content: flex-end;
+    font-size: 15px;
+  }
+  
+  .clear span:hover {
+    cursor: ;
+  }

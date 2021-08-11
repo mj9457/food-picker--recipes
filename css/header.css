@@ -20,35 +20,37 @@
 .header .header_tit {
     text-align: center;
     text-transform: uppercase;
-    margin-top: 55px;
-    font-family: 'Cafe24SsurroundAir', sans-serif;
+    margin-top: 25px;
+    font-family: "BlackHanSans", sans-serif;
 }
 .header .header_tit h1 {
-    font-size: 30px; 
-    color: #fff; 
-    background-color: #ffffff;
+    font-size: 40px; 
+    color: rgb(255 164 0);
+    text-shadow: 2px 2px 6px black;
     background-color: rgba( 255, 255, 255, 0.3 );
     display: inline-block; 
-    padding: 5px 30px 5px 30px; 
+    padding: 12px 30px 6px 30px;
+    margin-bottom: 15px;
     letter-spacing: 2px; 
-    font-weight: 900; 
+    font-weight: 500; 
     transition: box-shadow 0.25s ease-in-out;
+    box-shadow: 5px 5px 10px 1px rgba(82, 82, 87, 0.5);
 }
 .header .header_tit h1:hover {
     box-shadow: 
-        inset -9em 0 0 0 #327c1f, 
+        inset -9em 0 0 0 #327c1f,
         inset 9em 0 0 0 #327c1f;
     }
 .header .header_tit a {
-    font-size: 16px;
-    font-weight: bolder;
-    color: #fff; 
+    font-size: 20px;
+    color: #000000c2;
     background-color: #ffffff;
     background-color: rgba( 255, 255, 255, 0.3 );
     display: inline-block; 
     padding: 10px 20px 10px 20px; 
     margin-top: -7px; 
     transition: box-shadow 0.25s ease-in-out;
+    
 }
 .header .header_tit a:hover {
     box-shadow: 
@@ -59,23 +61,25 @@
 /* 헤더 아이콘 */
 .header .header_icon {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 37px;
     padding-bottom: 45px;
 }
 .header .header_icon li {
     display: inline;
-    margin: 0 2px;
+    margin: 0 11px;
+    
 }
 .header .header_icon li a {
     position: relative; 
     background-color: rgba( 255, 255, 255, 0.3 );
     border-radius: 50%; 
-    width: 60px; height: 60px; 
+    width: 80px; height: 80px; 
     color: #fff; 
     display:inline-block; 
-    font-size: 35px; 
-    line-height: 60px; 
+    font-size: 50px; 
+    line-height: 80px; 
     transition: all 0.3s ease;
+    box-shadow: 5px 5px 10px 1px rgb(82 82 87 / 50%)
 }
 .header .header_icon li a span {
     position: absolute; 
@@ -109,6 +113,8 @@
 }
 
 .header .header_icon li i{
+    color: #ffa400;
+    text-shadow: 2px 2px 6px rgb(0 0 0 / 65%);
     /*
     position:relative;
     top: 8%;*/
