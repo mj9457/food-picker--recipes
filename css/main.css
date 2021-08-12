@@ -138,6 +138,16 @@ body {}
     #maxRows {
         width: 23%;
     }
+    
+    #back-to-top {
+        width: 30px;
+        height: 30px;
+        
+    }
+    #back-to-top::after {
+        line-height: normal;
+        font-size: 1.8em;
+    }
 }   
 /* 화면 너비 0 ~ 600px */
 @media (max-width: 600px){
@@ -181,7 +191,7 @@ body {}
     }
 
     .todo_column {
-        min-height: auto;
+        min-height: 420px;
     }
     .js-toDoWrite, .toDoList input, .toDoList li {
         width: 280px;

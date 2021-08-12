@@ -457,6 +457,7 @@ summary.more_btn {
   
   .checked li {
     opacity: 0.7;
+    width: 280px;
   }
   
   .checked .fa-check-square {
