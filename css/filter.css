@@ -21,18 +21,21 @@
     margin:0.5%;
     cursor:pointer;
   }
-  input[type="radio"][id="kr_food"]:checked + label {
-    background: #FFAFBD;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to top, #ffc3a0, #FFAFBD);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to top, #ffc3a0, #FFAFBD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
-  }
+  /*
   input[type="radio"][id="kr_food"]:hover + label {
-    background: #D66D75;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #E29587, #D66D75);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #E29587, #D66D75); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color:#ffffff;
+    text-shadow: 2px 2px 6px rgb(0 0 0 / 50%);
+    background: #ff5722d4;
+  }*/
 
+  input[type="radio"][id="kr_food"]:checked + label, input[type="radio"][id="jp_food"]:checked + label,
+  input[type="radio"][id="ch_food"]:checked + label, input[type="radio"][id="wt_food"]:checked + label,
+  input[type="radio"][id="rm_food"]:checked + label, input[type="radio"][id="ck_food"]:checked + label,
+  input[type="radio"][id="jf_food"]:checked + label, input[type="radio"][id="drink"]:checked + label,
+  input[type="radio"][id="dessert"]:checked + label, input[type="radio"][id="reset"]:checked + label {
+    color:#ffffff;
+    text-shadow: 2px 2px 6px rgb(0 0 0 / 50%);
+    background: #ff5722d4;
   }
   input[type="radio"][id="kr_food"]:checked ~ .jp_food, input[type="radio"][id="kr_food"]:checked ~ .ch_food,
   input[type="radio"][id="kr_food"]:checked ~ .wt_food, input[type="radio"][id="kr_food"]:checked ~ .rm_food,
@@ -47,12 +50,6 @@ background: linear-gradient(to top, #ffc3a0, #FFAFBD); /* W3C, IE 10+/ Edge, Fir
     opacity:0;
   }
 
-  input[type="radio"][id="jp_food"]:checked + label {
-    background: #ee9ca7;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to top, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to top, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  }
   input[type="radio"][id="jp_food"]:checked ~ .ch_food, input[type="radio"][id="jp_food"]:checked ~ .wt_food,
   input[type="radio"][id="jp_food"]:checked ~ .rm_food, input[type="radio"][id="jp_food"]:checked ~ .ck_food,
   input[type="radio"][id="jp_food"]:checked ~ .jf_food, input[type="radio"][id="jp_food"]:checked ~ .drink,
@@ -64,9 +61,6 @@ background: linear-gradient(to top, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Fir
     opacity:0;
   }
 
-  input[type="radio"][id="ch_food"]:checked + label {
-    background:#66dd99;
-  }
   input[type="radio"][id="ch_food"]:checked ~ .wt_food, input[type="radio"][id="ch_food"]:checked ~ .rm_food,
   input[type="radio"][id="ch_food"]:checked ~ .ck_food, input[type="radio"][id="ch_food"]:checked ~ .jf_food,
   input[type="radio"][id="ch_food"]:checked ~ .drink, input[type="radio"][id="ch_food"]:checked ~ .dessert,
@@ -78,9 +72,6 @@ background: linear-gradient(to top, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Fir
     opacity:0;
   }
 
-  input[type="radio"][id="wt_food"]:checked + label {
-    background:#66dd99;
-  }
   input[type="radio"][id="wt_food"]:checked ~ .rm_food, input[type="radio"][id="wt_food"]:checked ~ .ck_food,
   input[type="radio"][id="wt_food"]:checked ~ .jf_food, input[type="radio"][id="wt_food"]:checked ~ .drink,
   input[type="radio"][id="wt_food"]:checked ~ .dessert, input[type="radio"][id="wt_food"]:checked ~ .kr_food,
@@ -92,9 +83,6 @@ background: linear-gradient(to top, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Fir
     opacity:0;
   }
 
-  input[type="radio"][id="rm_food"]:checked + label {
-    background:#66dd99;
-  }
   input[type="radio"][id="rm_food"]:checked ~ .ck_food, input[type="radio"][id="rm_food"]:checked ~ .jf_food,
   input[type="radio"][id="rm_food"]:checked ~ .drink, input[type="radio"][id="rm_food"]:checked ~ .dessert,
   input[type="radio"][id="rm_food"]:checked ~ .kr_food, input[type="radio"][id="rm_food"]:checked ~ .jp_food,
@@ -104,10 +92,6 @@ background: linear-gradient(to top, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Fir
     padding:0;
     margin:0;
     opacity:0;
-  }
-
-  input[type="radio"][id="ck_food"]:checked + label {
-    background:#66dd99;
   }
   input[type="radio"][id="ck_food"]:checked ~ .jf_food, input[type="radio"][id="ck_food"]:checked ~ .drink,
   input[type="radio"][id="ck_food"]:checked ~ .dessert, input[type="radio"][id="ck_food"]:checked ~ .kr_food,
@@ -119,10 +103,6 @@ background: linear-gradient(to top, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Fir
     margin:0;
     opacity:0;
   }
-
-  input[type="radio"][id="jf_food"]:checked + label {
-    background:#66dd99;
-  }
   input[type="radio"][id="jf_food"]:checked ~ .drink, input[type="radio"][id="jf_food"]:checked ~ .dessert, 
   input[type="radio"][id="jf_food"]:checked ~ .kr_food,  input[type="radio"][id="jf_food"]:checked ~ .jp_food,
   input[type="radio"][id="jf_food"]:checked ~ .ch_food,  input[type="radio"][id="jf_food"]:checked ~ .wt_food,
@@ -132,10 +112,6 @@ background: linear-gradient(to top, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Fir
     padding:0;
     margin:0;
     opacity:0;
-  }
-
-  input[type="radio"][id="drink"]:checked + label {
-    background:#66dd99;
   }
   input[type="radio"][id="drink"]:checked ~ .dessert, input[type="radio"][id="drink"]:checked ~ .kr_food,
   input[type="radio"][id="drink"]:checked ~ .jp_food,  input[type="radio"][id="drink"]:checked ~ .ch_food,
@@ -148,9 +124,6 @@ background: linear-gradient(to top, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Fir
     opacity:0;
   }
 
-  input[type="radio"][id="dessert"]:checked + label {
-    background:#66dd99;
-  }
   input[type="radio"][id="dessert"]:checked ~ .kr_food, input[type="radio"][id="dessert"]:checked ~ .jp_food,
   input[type="radio"][id="dessert"]:checked ~ .ch_food, input[type="radio"][id="dessert"]:checked ~ .wt_food,
   input[type="radio"][id="dessert"]:checked ~ .rm_food, input[type="radio"][id="dessert"]:checked ~ .ck_food,
@@ -184,6 +157,7 @@ background: linear-gradient(to top, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Fir
     font-size: 20px;
     font-family: 'Cafe24SsurroundAir';
     font-weight: bold;
+    color: #ff5722;
   }
 
   .tile img {

@@ -12,20 +12,22 @@
     position: absolute; top: -9px;
     width: 60px; height: 60px;
     line-height: 55px;
-    background: #ff9800; color: #fff;
+    background: #ff5722d9;
+    color: #fff;
     font-size: 35px;
     border-radius: 50%;
     transition: all 0.3s ease;
 }
 .title .btn:hover {
     box-shadow:
-        0 0 0 3px rgba(71,154,191,0.9) inset,
+        0 0 0 3px #ffffffe8 inset,
         0 0 0 100px rgba(0,0,0,0.1) inset; 
 }
 
 .title .btn i {
     position: relative;
     top: -5px;
+    color: #ffffff;
 }
 
 .column {
@@ -36,7 +38,7 @@
     font-size: 20px;
     font-weight: bold;
     font-family: 'Cafe24SsurroundAir', sans-serif;
-    color: #2f7fa6;
+    color: #ff5722;
     padding-bottom: 5px;
 }
 .column .col_desc {
@@ -49,7 +51,7 @@
 .column .col_tit_r {
     font-size: 20px;
     font-family: 'Cafe24SsurroundAir', sans-serif;
-    color: #2f7fa6;
+    color: #ff5722;
     padding-bottom: 5px;
     font-weight: bold;
     text-align: center;
@@ -91,9 +93,10 @@
     position: absolute; right: 10px; top: 15px;
 }
 .menu li a:hover {
-    box-shadow: inset 180px 0 0 0 rgba(36,130,174,0.7);
+    box-shadow: inset 180px 0 0 0 #ff5622b9;
     color: #fff;
-    background: rgba(36,130,174,0.9);
+    background: #ff5622de;
+    text-decoration: none;
 }
 
 /* 게시판1 */
@@ -282,6 +285,11 @@ summary.more_btn {
     vertical-align: middle;
 }
 
+.table .main_a {
+  color: #ff5722;
+}
+
+
 /* 메인컨텐츠 */
 .main_content_tit {
     font-size: 30px;
@@ -307,7 +315,7 @@ summary.more_btn {
 /*  위로이동 버튼 */
 #back-to-top {
     display: inline-block;
-    background-color: #FF9800;
+    background-color: #ff5722;
     width: 50px;
     height: 50px;
     text-align: center;
@@ -320,6 +328,7 @@ summary.more_btn {
     opacity: 0;
     visibility: hidden;
     z-index: 1000;
+    text-decoration: none;
   }
   #back-to-top::after {
     content: "\f077";

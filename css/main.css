@@ -4,7 +4,9 @@ body {}
     background: url("../image/background.jpg")  center top;
     background-size: cover;
 }
-#nav {background-color: #f6fdff;}
+#nav {
+    background-color: #ffffff00;
+}
 #title {
     background-color: #FFF7E6;
     box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
@@ -23,7 +25,10 @@ body {}
     min-height: 1288px;
 }
 #cont_right {position: absolute; right: 0; top: 0; width: 250px;}
-#footer {border-top: 1px solid #dbdbdb;} 
+#footer {
+    border-top: 1px solid #dbdbdb;
+    box-shadow: 1px 0 3px rgb(0 0 0 / 12%), 1px 0 2px rgb(0 0 0 / 24%);
+} 
 
 /* 컨테이너 */
 .container {
@@ -97,7 +102,11 @@ body {}
 /* 화면 너비 0 ~ 768px */
 @media (max-width: 768px){
     
-    #cont_left {float: none; width: 100%;}
+    #cont_left {
+        float: none;
+        width: 100%;
+        border-right: none;
+    }
     #cont_center {
         min-height: auto;
         border-left: 0;
@@ -107,7 +116,8 @@ body {}
         font-size: 13px;
     }
 
-    .column.col2 {display: none;}
+    .column.col2, .column.col2_1 {display: none;}
+    
     .column .col_tit_r , .column .col_desc_r  {
         text-align: left;
     }
@@ -118,6 +128,11 @@ body {}
     .random_eat span:nth-child(n+2) {
         width: 48%;
         text-align: center;
+    }
+
+    #filters_wrap {
+        width: 109%;
+        margin-left: -1.5%;
     }
 
     #maxRows {
@@ -145,9 +160,13 @@ body {}
     .column.col1 .menu ul {overflow: hidden;}
     .column.col1 .menu li {float: left; width: 33.3333%; border-right: 1px solid #dbdbdb; text-align: center; box-sizing: border-box;}
     .column.col1 .menu li:nth-child(3n) {border-right: 0;}
-    .column.col1 .menu li a {color: rgb(68, 57, 167); text-shadow: 0 0 5px rgba(0,0,0,0.7);}
+    .column.col1 .menu li a {
+        color: rgb(0, 0, 0);
+        text-shadow: 1px 1px 2px #ff5722d9;
+    }
     .column.col1 .menu li a:hover { box-shadow: none; background: rgba(36,130,174,0.3);}
-    .column.col2 {background: #fff; display: none;}
+    .column.col2 {display: none;}
+    .column.col2_1 {display: none;}
     .column.col3 {display: none;}
     .column.col4 {border-top: 1px solid #dbdbdb; }
     .column.col7 {display: none;}
@@ -159,6 +178,13 @@ body {}
         font-size: 16px;
         width: 49%;
         text-align: center;        
+    }
+
+    .todo_column {
+        min-height: auto;
+    }
+    .js-toDoWrite, .toDoList input, .toDoList li {
+        width: 280px;
     }
 
     #maxRows {
@@ -221,11 +247,13 @@ legend,p, select, table, th, td, tr, textarea, button, form, figure, figcaption{
 
 /* a 링크 초기화 */
 a {
-    color: #222; text-decoration: none;
+    color: #222;
+    text-decoration: none;
 }
 
 a:hover {
-    color: #2698cb;
+    color: #ff5722;
+    text-decoration: none;
 }
 
 /* 폰트 초기화 */
