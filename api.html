@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>왜안되냐고 싯팔</h1>
+    
+    <script type="text/javascript">
+        // api
+        $.ajax({
+            method: "GET",
+            url: "https://openapi.naver.com/v1/search/local.xml?query=%EC%A3%BC%EC%8B%9D&display=10&start=1&sort=random",
+            data: { query: "다산동 맛집" },
+            headers : {"X-Naver-Client-Id": "4hg4NSJVJXiOUYNbLnS8" }
+            })
+            .done(function (msg) {
+                alert("Data Saved: " + msg);
+            });
+    </script>    
+</body>
+</html>
