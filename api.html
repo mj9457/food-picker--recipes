@@ -7,19 +7,42 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>왜안되냐고 싯팔</h1>
+    <h1>왜안되냐고 왜 안되냐고 왜 안되 냐고</h1>
     
-    <script type="text/javascript">
-        // api
+    <script src="../food picker/js/jquery-3.6.0.min.js"></script>
+<!--
+    <script>
         $.ajax({
             method: "GET",
-            url: "https://openapi.naver.com/v1/search/local.xml?query=%EC%A3%BC%EC%8B%9D&display=10&start=1&sort=random",
-            data: { query: "다산동 맛집" },
-            headers : {"X-Naver-Client-Id": "4hg4NSJVJXiOUYNbLnS8" }
-            })
-            .done(function (msg) {
-                alert("Data Saved: " + msg);
+            url: "https://help-me-errors-mj9457.herokuapp.com/https://openapi.naver.com/v1/search/local.json",
+            data: { query: "남양주 다산동 맛집", display: 5 , start: 1 },
+            headers: { "X-Naver-Client-Id": "4hg4NSJVJXiOUYNbLnS8", "X-Naver-Client-Secret": "maxgySrCpi"}
+        })
+            .done(function(msg) {
+                console.log(msg);
             });
-    </script>    
+    </script>-->
+    <script>
+        // 검색 + 네이버 api 
+        $(document).ready(function () {
+            $("#search").click(function () {
+                $.ajax({
+                    method: "GET",
+                    url: "https://help-me-errors-mj9457.herokuapp.com/https://openapi.naver.com/v1/search/local.json",
+                    data: { query: "남양주 다산동 맛집", display: 5 , start: 1 },
+                    headers: { "X-Naver-Client-Id": "4hg4NSJVJXiOUYNbLnS8", "X-Naver-Client-Secret": "maxgySrCpi"}
+                })
+                    .done(function (msg) {
+                        console.log(msg);
+                        console.log(msg.items[0].title, msg.items[0].category);
+                        console.log(msg.items[1].title);
+                        console.log(msg.items[2].title);
+                        console.log(msg.items[3].title);
+                        console.log(msg.items[4].title);
+                        $("p").append("<strong>" + msg.items[0].title + "</strong>");
+                    });
+            });
+        });
+    </script>
 </body>
 </html>

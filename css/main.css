@@ -178,7 +178,7 @@ body {}
     .column.col2 {display: none;}
     .column.col2_1 {display: none;}
     .column.col3 {display: none;}
-    .column.col4 {border-top: 1px solid #dbdbdb; }
+    .column.col4 {border-top: 1px solid #dbdbdb; border-bottom: none;}
     .column.col7 {display: none;}
     .column.col8 {display: none;}
     .column.col9 {display: none;}
